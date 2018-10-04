@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+    <link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
+    <link rel="stylesheet" href="media/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <main role="main">
+        <div class="masthead">
+          <img class="fx-logo" src="media/img/FirefoxRelease.png">
+          <h1>Share the Love</h1>
+        </div>
+        <section class="pitch">
+          <h3>You know that Firefox lorem ipsum. Why not share your good judgement with the visitors to your website?</h3>
+        </section>
+        <section>
+          <h2>How about some code?</h2>
+          <p>
+            You can pick from the badges below, and copy the code into your site.
+            We'll take care of hosting the image!
+          </p>
+          <div class="badges">
+            <form class="badges__choice" onsubmit="return false">
+              <template class="badge__template">
+                <label>
+                  <input type="radio" name="badge">
+                  <img>
+                </label>
+              </template>
+            </form>
+            <div class="badges__code">
+              The badge will look like this on your site:
+              <div class="badges__preview"></div>
+              Copy the code below and add it to your site:
+              <textarea class="badges__markup">
+              </textarea>
+              <button class="badges__copy">Copy to Clipboard</button>
+            </div>
+          </div>
+        </section>
+        <section class="pitch">
+          <h1>Thanks for your support!</h1>
+        </section>
+      </main>
+      <footer>
+        <div class="footer">
+          <img src="media/img/mozilla-logo-white.svg">
+          <nav class="footer__links">
+            <a href="/en-US/privacy/">Privacy</a>
+            <a href="/en-US/privacy/websites/">Website Privacy Notice</a>
+            <a href="/en-US/privacy/websites/#cookies">Cookies</a>
+            <a href="/en-US/about/legal/">Legal</a>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <script src="badges.js"></script>
+  </body>
+</html>

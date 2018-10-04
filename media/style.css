@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+}
+
+:root {
+  --blue-40: #45a1ff;
+  --blue-50: #0a84ff;
+  --blue-50-a30: rgba(10, 132, 255, 0.3);
+  --blue-60: #0060df;
+  --blue-70: #003eaa;
+  --blue-80: #002275;
+  --blue-90: #000f40;
+}
+
+html {
+  font-size: 16px;
+  font-size: calc(13px + (18 - 13) * ((100vw - 300px) / (1200 - 300)));
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont,
+               'helvetica neue', helvetica,
+               ubuntu,
+               roboto, noto,
+               'segoe ui', arial, sans-serif;
+  line-height: 1.5;
+}
+
+h1, h2, h3 {
+  font-family: "Fira Sans";
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.masthead {
+  background: #003eaa;
+  background: url("media/img/wave.svg") 50% 102% no-repeat,
+              url("media/img/fox-tail-header.png") top -200px center no-repeat,
+              linear-gradient(to bottom,#003eaa 40%,#004ec2 60%,#0060df 80%,#0080ff 90%,#00c7ff 100%);
+  -webkit-background-size: 5223px 186px, auto, auto;
+  background-size: 5223px 186px, auto, auto;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  display: block;
+  padding: 3em 0 5em;
+  max-width: none;
+}
+
+.masthead h1 {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 3em;
+  letter-spacing: 1px;
+  margin: 1rem;
+}
+
+.pitch {
+  text-align: center;
+  margin: 5vw 0 10vw;
+}
+
+main {
+  min-height: 90vh;
+}
+
+main > *, footer > * {
+  padding: 0em 3em;
+  margin: 0 auto;
+  max-width: 1600px;
+  min-width: 300px;
+}
+
+main > * + *, footer {
+  margin-top: 4em;
+}
+
+footer {
+  padding: 3em 0;
+  background: #000;
+  color: #fff;
+}
+.footer > * + * {
+  margin-top: 1em;
+}
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer__links a {
+  font-size: .8em;
+  display: inline-block;
+  margin-right: 1.25em;
+}
+
+.fx-logo {
+  max-width: 6em;
+}
+
+
+.badges {
+  padding: 1em 3em;
+  margin: 2em -3em;
+  background: #f0f0f0;
+}
+
+.badges__choice {
+  display: grid;
+  --item-size: calc(96px + (120 - 96) * ((100vw - 300px) / (1200 - 300)));
+  grid-template-columns: repeat(auto-fill, minmax(var(--item-size), 1fr));
+  grid-auto-rows: auto;
+  justify-content: space-around;
+  grid-gap: 1em;
+  padding: 1em;
+}
+.badges__choice label {
+  display: block;
+}
+.badges__choice input {
+  display: none;
+}
+.badges__choice input:checked + img {
+  box-shadow:
+  0 0 0 1px var(--blue-50),
+  0 0 0 4px var(--blue-50-a30);
+}
+.badges__choice img {
+  margin: 0 auto;
+  display: block;
+  width: var(--item-size);
+  height: var(--item-size);
+  object-fit: contain;
+  padding: 4px;
+  box-shadow: 0 0 0 1px #ccc;
+  background: #fff;
+}
+.badges__code {
+  background: #fff;
+  padding: 1em;
+  font-size: .9em;
+}
+.badges__markup {
+  display: block;
+  margin: 1em 0;
+  width: 100%;
+  height: 8em;
+  overflow: auto;
+  white-space: pre-wrap;
+}
+.badges__preview {
+  margin: 1em 0;
+  text-align: center;
+}
+.badges__preview img {
+  max-width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  .badges {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+  .badges__choice {
+    padding-left: 0;
+    margin-right: 1em;
+  }
+}

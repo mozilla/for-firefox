@@ -1,0 +1,23 @@
+{
+  "name": "for-firefox",
+  "version": "1.0.0",
+  "description": "Resource/asset landing page for the \"For Firefox\" campaign",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mozilla/for-firefox.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mozilla/for-firefox/issues"
+  },
+  "homepage": "https://github.com/mozilla/for-firefox#readme",
+  "devDependencies": {
+    "live-server": "^1.2.0"
+  }
+}
