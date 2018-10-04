@@ -38,8 +38,8 @@ h1, h2, h3 {
 
 .masthead {
   background: #003eaa;
-  background: url("media/img/wave.svg") 50% 102% no-repeat,
-              url("media/img/fox-tail-header.png") top -200px center no-repeat,
+  background: url("img/wave.svg") 50% 102% no-repeat,
+              url("img/fox-tail-header.png") top -200px center no-repeat,
               linear-gradient(to bottom,#003eaa 40%,#004ec2 60%,#0060df 80%,#0080ff 90%,#00c7ff 100%);
   -webkit-background-size: 5223px 186px, auto, auto;
   background-size: 5223px 186px, auto, auto;
