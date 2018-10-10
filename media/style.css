@@ -79,7 +79,7 @@ button:focus {
 }
 
 .pitch {
-  margin: 2em auto 4em;
+  margin: 2em auto 2em;
   font-size: 1.125rem;
   font-weight: 300;
 }
@@ -101,11 +101,12 @@ main > *, footer > * {
   min-width: 300px;
 }
 
-main > * + *, footer {
+main > * + * {
   margin-top: 4em;
 }
 
 footer {
+  margin-top: 2em;
   padding: 3em 0;
   background: #000;
   color: #fff;
@@ -134,11 +135,10 @@ footer {
 }
 
 .badges {
-  padding: 1em;
-  margin: 2em 0;
+  padding: 1.5em;
+  margin: 2em -2em 4em;
   background: #f8f8f8;
   box-shadow: 0 4px 12px rgba(0, 0, 0, .1) inset;
-
 }
 
 .badges__choice {
@@ -202,6 +202,8 @@ footer {
     grid-template-columns: 1fr 1fr;
     align-items: start;
     padding: 3em;
+    margin-left: 0;
+    margin-right: 0;
   }
   .badges__choice {
     padding-left: 0;
