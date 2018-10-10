@@ -137,6 +137,8 @@ footer {
   padding: 1em;
   margin: 2em 0;
   background: #f8f8f8;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .1) inset;
+
 }
 
 .badges__choice {
@@ -174,6 +176,8 @@ footer {
   padding: 1em;
   font-size: .9em;
   border-radius: 2px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+
 }
 .badges__markup {
   display: block;
