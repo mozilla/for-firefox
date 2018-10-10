@@ -38,11 +38,8 @@ window.addEventListener('DOMContentLoaded', () => {
   formEl.addEventListener('change', e => {
     let selected = badges[formEl.elements.badge.value];
     let badgeCode = `
-<a title="${selected.title}"
-   href="https://www.mozilla.org/firefox/this-browser-comes-highly-recommended/?utm_source=devs-for.firefox.com&utm_medium=referral&utm_campaign=devs-for-firefox&utm_content=${selected.id}">
-      <img style="border:0 none;"
-           alt="Get the new Firefox"
-           src="${selected.url}">
+<a title="${selected.title}" href="https://www.mozilla.org/firefox/this-browser-comes-highly-recommended/?utm_source=devs-for.firefox.com&utm_medium=referral&utm_campaign=devs-for-firefox&utm_content=${selected.id}">
+  <img style="border:0 none;" alt="Get the new Firefox" src="${selected.url}">
 </a>
     `.trim();
 

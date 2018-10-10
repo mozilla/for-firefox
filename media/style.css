@@ -18,7 +18,7 @@ html, body {
 
 html {
   font-size: 16px;
-  font-size: calc(13px + (18 - 13) * ((100vw - 300px) / (1200 - 300)));
+  font-size: calc(13px + (16 - 13) * ((100vw - 300px) / (1200 - 300)));
 }
 
 body {
@@ -28,6 +28,7 @@ body {
                roboto, noto,
                'segoe ui', arial, sans-serif;
   line-height: 1.5;
+  font-weight: 300;
 }
 
 h1, h2, h3 {
@@ -68,18 +69,19 @@ button:focus {
   /* overflow: hidden; */
   position: relative;
   display: block;
-  padding: 3em 0 0;
+  padding: 4em 0 0;
   max-width: none;
 }
 
 .masthead h1 {
   font-size: 3em;
-  letter-spacing: 1px;
-  margin: 1rem;
+  margin: .8rem 0 1em;
 }
 
 .pitch {
-  margin: 5vw auto 10vw;
+  margin: 2em auto 4em;
+  font-size: 1.125rem;
+  font-weight: 300;
 }
 .pitch h3 {
   max-width: 45ch;
@@ -122,13 +124,19 @@ footer {
 }
 
 .fx-logo {
-  max-width: 6em;
+  max-width: 5em;
+}
+
+.laptop {
+  max-width: 100%;
+  margin: 0 auto;
+
 }
 
 .badges {
-  padding: 3em;
-  margin: 2em -3em;
-  background: #f0f0f0;
+  padding: 1em;
+  margin: 2em 0;
+  background: #f8f8f8;
 }
 
 .badges__choice {
@@ -189,6 +197,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: start;
+    padding: 3em;
   }
   .badges__choice {
     padding-left: 0;
