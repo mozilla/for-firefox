@@ -4,19 +4,23 @@ window.addEventListener('DOMContentLoaded', () => {
   let codeEl = document.querySelector('.badges__markup');
   let previewEl = document.querySelector('.badges__preview');
   let templateEl = document.querySelector('.badge__template');
+  let copyButton = document.querySelector('.badges__copy');
 
   const badges = [
     {
       url: 'media/img/shield-badge.png',
-      title: 'Developers for Firefox'
+      title: 'Developers for Firefox',
+      id: 'shield'
     },
     {
       url: '//bits.potch.me/new-firefox.png',
-      title: 'Firefox Now!'
+      title: 'Firefox Now!',
+      id: 'firefox-now'
     },
     {
       url: '//bits.potch.me/firefox95.GIF',
-      title: 'Throwback'
+      title: 'Throwback',
+      id: 'throwback'
     }
   ];
 
@@ -35,7 +39,7 @@ window.addEventListener('DOMContentLoaded', () => {
     let selected = badges[formEl.elements.badge.value];
     let badgeCode = `
 <a title="${selected.title}"
-   href="https://www.mozilla.org/en-US/firefox/this-browser-comes-highly-recommended">
+   href="https://www.mozilla.org/firefox/this-browser-comes-highly-recommended/?utm_source=devs-for.firefox.com&utm_medium=referral&utm_campaign=devs-for-firefox&utm_content=${selected.id}">
       <img style="border:0 none;"
            alt="Get the new Firefox"
            src="${selected.url}">
@@ -47,4 +51,9 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 
   formEl.querySelector('input').click();
+
+  copyButton.addEventListener('click', e => {
+    codeEl.select();
+    document.execCommand('copy');
+  });
 })

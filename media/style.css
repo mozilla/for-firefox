@@ -31,46 +31,69 @@ body {
 }
 
 h1, h2, h3 {
-  font-family: "Fira Sans";
-  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
   line-height: 1.2;
 }
 
+button {
+  font: inherit;
+  font-size: .8em;
+  transition: background-color 100ms, border-color 100ms, color 100ms;
+  background-color: #000;
+  border-radius: 2px;
+  border: 2px solid #000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .2);
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: bold;
+  padding: .8em 1.2em;
+  text-decoration: none;
+}
+button:hover,
+button:focus {
+  background-color: #fff;
+  color: #000;
+}
+
 .masthead {
-  background: #003eaa;
+  /* background: #003eaa;
   background: url("img/wave.svg") 50% 102% no-repeat,
               url("img/fox-tail-header.png") top -200px center no-repeat,
-              linear-gradient(to bottom,#003eaa 40%,#004ec2 60%,#0060df 80%,#0080ff 90%,#00c7ff 100%);
-  -webkit-background-size: 5223px 186px, auto, auto;
-  background-size: 5223px 186px, auto, auto;
-  color: #fff;
-  overflow: hidden;
+              linear-gradient(to bottom,#003eaa 40%,#004ec2 60%,#0060df 80%,#0080ff 90%,#00c7ff 100%); */
+  /* -webkit-background-size: 5223px 186px, auto, auto; */
+  /* background-size: 5223px 186px, auto, auto; */
+  /* color: #fff; */
+  /* overflow: hidden; */
   position: relative;
-  text-align: center;
   display: block;
-  padding: 3em 0 5em;
+  padding: 3em 0 0;
   max-width: none;
 }
 
 .masthead h1 {
-  font-style: italic;
-  font-weight: 300;
   font-size: 3em;
   letter-spacing: 1px;
   margin: 1rem;
 }
 
 .pitch {
-  text-align: center;
-  margin: 5vw 0 10vw;
+  margin: 5vw auto 10vw;
+}
+.pitch h3 {
+  max-width: 45ch;
+  margin: 0 auto;
 }
 
 main {
   min-height: 90vh;
+  text-align: center;
+  overflow: hidden;
 }
 
 main > *, footer > * {
-  padding: 0em 3em;
+  padding: 0em 2em;
   margin: 0 auto;
   max-width: 1600px;
   min-width: 300px;
@@ -102,9 +125,8 @@ footer {
   max-width: 6em;
 }
 
-
 .badges {
-  padding: 1em 3em;
+  padding: 3em;
   margin: 2em -3em;
   background: #f0f0f0;
 }
@@ -143,18 +165,20 @@ footer {
   background: #fff;
   padding: 1em;
   font-size: .9em;
+  border-radius: 2px;
 }
 .badges__markup {
   display: block;
+  padding: .5em;
+  border: 1px solid #000;
   margin: 1em 0;
   width: 100%;
-  height: 8em;
+  height: 10em;
   overflow: auto;
   white-space: pre-wrap;
 }
 .badges__preview {
   margin: 1em 0;
-  text-align: center;
 }
 .badges__preview img {
   max-width: 100%;
