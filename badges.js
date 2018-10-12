@@ -1,6 +1,7 @@
 
 window.addEventListener('DOMContentLoaded', () => {
   let formEl = document.querySelector('.badges__choice');
+  let gridEl = document.querySelector('.badges__grid');
   let codeEl = document.querySelector('.badges__markup');
   let previewEl = document.querySelector('.badges__preview');
   let templateEl = document.querySelector('.badge__template');
@@ -24,7 +25,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   ];
 
-  for (let i = 0; i < 5; i++) {
+  for (let i = 0; i < 25; i++) {
     badges.push(badges[0]);
   }
 
@@ -32,7 +33,7 @@ window.addEventListener('DOMContentLoaded', () => {
     let el = document.importNode(templateEl.content, true);
     el.querySelector('img').setAttribute('src', badge.url);
     el.querySelector('input').value = i;
-    formEl.appendChild(el);
+    gridEl.appendChild(el);
   });
 
   formEl.addEventListener('change', e => {
