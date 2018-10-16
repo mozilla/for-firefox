@@ -61,4 +61,6 @@ window.addEventListener('DOMContentLoaded', () => {
     codeEl.select();
     document.execCommand('copy');
   });
+  
+  document.querySelector(window.location.hash).scrollIntoView();
 })
