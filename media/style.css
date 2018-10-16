@@ -140,7 +140,7 @@ footer {
   background: #f8f8f8;
   box-shadow: 0 4px 12px rgba(0, 0, 0, .1) inset;
   overflow: hidden;
-  min-height: 90vh;
+  min-height: 75vh;
 }
 .badges__choice {
   --item-size: calc(96px + (120 - 96) * ((100vw - 300px) / (1200 - 300)));
