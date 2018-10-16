@@ -140,6 +140,7 @@ footer {
   background: #f8f8f8;
   box-shadow: 0 4px 12px rgba(0, 0, 0, .1) inset;
   overflow: hidden;
+  min-height: 90vh;
 }
 .badges__choice {
   --item-size: calc(96px + (120 - 96) * ((100vw - 300px) / (1200 - 300)));
@@ -195,7 +196,8 @@ footer {
   font-size: .9em;
   border-radius: 2px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
-
+  display: flex;
+  flex-direction: column;
 }
 .badges__markup {
   display: block;
@@ -206,9 +208,11 @@ footer {
   height: 10em;
   overflow: auto;
   white-space: pre-wrap;
+  font-family: monospace;
 }
 .badges__preview {
-  margin: 1em 0;
+  padding: 1em 0;
+  margin: auto 0;
 }
 .badges__preview img {
   max-width: 100%;

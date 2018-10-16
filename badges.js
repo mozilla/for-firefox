@@ -9,29 +9,30 @@ window.addEventListener('DOMContentLoaded', () => {
 
   const badges = [
     {
-      url: 'media/img/shield-badge.png',
       title: 'Developers for Firefox',
-      id: 'shield'
+      id: 'Developers_For_Firefox_Light'
     },
     {
-      url: '//bits.potch.me/new-firefox.png',
-      title: 'Firefox Now!',
-      id: 'firefox-now'
+      title: 'Developers for Firefox',
+      id: 'Developers_For_Firefox_Dark'
     },
     {
-      url: '//bits.potch.me/firefox95.GIF',
-      title: 'Throwback',
-      id: 'throwback'
+      title: 'Designers for Firefox',
+      id: 'Designers_For_Firefox_Light'
+    },
+    {
+      title: 'I Use Firefox',
+      id: 'I-Use-Firefox'
+    },
+    {
+      title: 'Fast For Good',
+      id: 'Fast-For-Good'
     }
   ];
 
-  for (let i = 0; i < 25; i++) {
-    badges.push(badges[0]);
-  }
-
   badges.forEach((badge, i) => {
     let el = document.importNode(templateEl.content, true);
-    el.querySelector('img').setAttribute('src', badge.url);
+    el.querySelector('img').setAttribute('src', `//code.cdn.mozilla.net/for-firefox/badges/assets/${badge.id}.png`);
     el.querySelector('input').value = i;
     gridEl.appendChild(el);
   });
@@ -40,7 +41,11 @@ window.addEventListener('DOMContentLoaded', () => {
     let selected = badges[formEl.elements.badge.value];
     let badgeCode = `
 <a title="${selected.title}" href="https://www.mozilla.org/firefox/this-browser-comes-highly-recommended/?utm_source=devs-for.firefox.com&utm_medium=referral&utm_campaign=devs-for-firefox&utm_content=${selected.id}">
-  <img style="border:0 none;" alt="Get the new Firefox" src="${selected.url}">
+  <img style="border:0 none;"
+       alt="${selected.title}"
+       srcset="//code.cdn.mozilla.net/for-firefox/badges/assets/${selected.id}.png,
+               //code.cdn.mozilla.net/for-firefox/badges/assets/${selected.id}-2x.png 2x"
+       src="//code.cdn.mozilla.net/for-firefox/badges/assets/${selected.id}.png">
 </a>
     `.trim();
 
