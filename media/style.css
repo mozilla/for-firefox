@@ -218,6 +218,19 @@ footer {
   max-width: 100%;
 }
 
+.faq {
+  text-align: left;
+}
+.faq ul {
+  padding-left: .6em;
+}
+.faq p {
+  max-width: 65ch;
+}
+.faq li + li {
+  margin-top: 2em;
+}
+
 @media screen and (min-width: 800px) {
   .badges {
     display: grid;
@@ -243,5 +256,8 @@ footer {
     padding-left: 0;
     margin: 0 3em 0 0;
     height: auto;
+  }
+  .faq ul {
+    padding-left: 1em;
   }
 }
