@@ -19,6 +19,7 @@
   "homepage": "https://github.com/mozilla/for-firefox#readme",
   "devDependencies": {
     "@mozilla-protocol/core": "^2.4.2",
-    "live-server": "^1.2.0"
-  }
+    "live-server": "^1.2.1"
+  },
+  "dependencies": {}
 }
