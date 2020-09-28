@@ -45,9 +45,9 @@ window.addEventListener('DOMContentLoaded', () => {
    href="https://www.mozilla.org/firefox/this-browser-comes-highly-recommended/?utm_source=devs-for.firefox.com&utm_medium=referral&utm_campaign=devs-for-firefox&utm_content=${selected.id}">
   <img style="border:0 none;"
        alt="${selected.title}"
-       srcset="//code.cdn.mozilla.net/for-firefox/badges/assets/${selected.id}.png,
-               //code.cdn.mozilla.net/for-firefox/badges/assets/${selected.id}-2x.png 2x"
-       src="//code.cdn.mozilla.net/for-firefox/badges/assets/${selected.id}.png">
+       srcset="https://code.cdn.mozilla.net/for-firefox/badges/assets/${selected.id}.png,
+               https://code.cdn.mozilla.net/for-firefox/badges/assets/${selected.id}-2x.png 2x"
+       src="https://code.cdn.mozilla.net/for-firefox/badges/assets/${selected.id}.png">
 </a>
     `.trim();
 
